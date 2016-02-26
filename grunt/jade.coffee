@@ -10,4 +10,11 @@ module.exports =
       dest: env.paths.dest.root
       expand: true
       ext: ".html"
+    }, {
+      cwd: env.paths.templates
+      src: ["**/*.component.jade"]
+      dest: "#{env.paths.tmp}/templates"
+      expand: true
+      ext: ".html"
     }]
+

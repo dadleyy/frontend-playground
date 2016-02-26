@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title CXUI II | Exploration
+    link(type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css")
+    link(type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.css")
+  body
+    .header
+    #main.main.row
+      user-list.user-list(v-bind:items="items")
+    .footer
+    script(src="/scripts/vendor.bundle.js")
+    script.
+      (function() {
+        requirejs.config({
+          baseUrl: "/scripts",
+          paths: {
+            "templates": "/templates"
+          }
+        });
+
+        function loaded() {
+          console.log("loaded");
+        }
+
+        require(["app"], loaded);
+      })();

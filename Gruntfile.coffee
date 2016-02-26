@@ -17,10 +17,9 @@ module.exports = (grunt) ->
     copy: require "./grunt/copy"
 
   grunt.registerTask "default", [
-    "clean"
-    "jade"
-    "concat"
-    "coffee"
-    "riot"
-    "copy"
+    "clean:all"
+    "jade:debug"
+    "concat:debug"
+    "coffee:debug"
+    "copy:debug"
   ]
