@@ -6,7 +6,6 @@ define [
 
   instance = new Vue
     el: "#main"
-    data:
-      items: [{name: "bill"}, {name: "danny"}]
+    data: {items: []}
 
   true
