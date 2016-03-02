@@ -1,0 +1,6 @@
+.user-item.row
+  .column.large-4
+    span user name: <b>{{ user.name }}</b>
+  .column.large-8
+    a.button(v-on:click="remove") remove
+    a.button(v-on:click="rename") rename

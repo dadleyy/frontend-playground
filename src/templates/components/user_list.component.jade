@@ -1,0 +1,7 @@
+.user-list
+  h1 users
+  a(href="#" v-on:click="clicked") click me
+  br
+  ul.no-bullet(v-for="item in items")
+    li.user-item
+      user-item(v-bind:user="item" v-bind:delegate="delegate")
